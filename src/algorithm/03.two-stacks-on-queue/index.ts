@@ -2,7 +2,7 @@
  * @Author: duanshuaishuai 
  * @Date: 2022-02-27 11:55:17 
  * @Last Modified by: duanshuaishuai
- * @Last Modified time: 2022-02-27 12:10:49
+ * @Last Modified time: 2022-02-27 22:15:57
  */
 
 /**
@@ -34,3 +34,16 @@ export class MyQueue {
         return this.stack1.length
     }
 }
+
+
+// 性能测试 773.ms
+const queue = new MyQueue()
+console.time('linkListArray')
+for (let index = 0; index < 10000; index++) {
+    queue.add(index)
+}
+
+for (let index = 0; index < 10000; index++) {
+    queue.delete()
+}
+console.timeEnd('linkListArray')
