@@ -2,7 +2,7 @@
  * @Author: duanshuaishuai 
  * @Date: 2022-02-26 21:45:05 
  * @Last Modified by: duanshuaishuai
- * @Last Modified time: 2022-02-26 22:26:02
+ * @Last Modified time: 2022-02-27 10:39:46
  */
 
 /**
@@ -20,7 +20,7 @@
  * 时间复杂度：O(N^2) array是有序数组，unshift一次相当于重排一次
  * 空间复杂度：O(1)
  */
-export const ArrayRotateBySteps1 =(arr:number[],steps:number):number[]=>{
+export const arrayRotateBySteps1 =(arr:number[],steps:number):number[]=>{
     // 参数校验
     if(Array.isArray(arr) && arr.length && Number.isInteger(steps)){
         const needSteps=Math.abs(steps%arr.length)
@@ -42,7 +42,7 @@ export const ArrayRotateBySteps1 =(arr:number[],steps:number):number[]=>{
  * 时间复杂度：O(1)
  * 空间复杂度：O(N)
  */
- export const ArrayRotateBySteps2 =(arr:number[],steps:number):number[]=>{
+ export const arrayRotateBySteps2 =(arr:number[],steps:number):number[]=>{
     // 参数校验
     if(Array.isArray(arr) && arr.length && Number.isInteger(steps)){
         const needSteps=Math.abs(steps%arr.length)
