@@ -8,7 +8,7 @@
 /**
  * 题目：链表实现队列
  */
-interface linkListNode {
+ interface linkListNode {
     value:number,
     next:linkListNode | null
 }
@@ -60,15 +60,15 @@ interface linkListNode {
 } 
 
 // 性能测试 2.023ms
-const queue = new MyQueue()
-console.time('linkListQueue')
-for (let index = 0; index < 10000; index++) {
-    queue.add(index)
-}
+// const queue = new MyQueue()
+// console.time('linkListQueue')
+// for (let index = 0; index < 10000; index++) {
+//     queue.add(index)
+// }
 
-for (let index = 0; index < 10000; index++) {
-    queue.delete()
-}
-console.timeEnd('linkListQueue')
+// for (let index = 0; index < 10000; index++) {
+//     queue.delete()
+// }
+// console.timeEnd('linkListQueue')
 
 
