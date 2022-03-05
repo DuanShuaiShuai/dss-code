@@ -80,9 +80,6 @@ export function findContinueChar2(str:string):resI{
 }
 
 
-console.log(findContinueChar2('aabbbggfffff'));
-
-
 
 
 
