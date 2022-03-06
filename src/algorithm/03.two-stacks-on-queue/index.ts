@@ -37,13 +37,13 @@ export class MyQueue {
 
 
 // 性能测试 773.ms
-const queue = new MyQueue()
-console.time('linkListArray')
-for (let index = 0; index < 10000; index++) {
-    queue.add(index)
-}
+// const queue = new MyQueue()
+// console.time('linkListArray')
+// for (let index = 0; index < 10000; index++) {
+//     queue.add(index)
+// }
 
-for (let index = 0; index < 10000; index++) {
-    queue.delete()
-}
-console.timeEnd('linkListArray')
+// for (let index = 0; index < 10000; index++) {
+//     queue.delete()
+// }
+// console.timeEnd('linkListArray')
